@@ -65,7 +65,7 @@ class Home(MainHandler):
 class Admin(MainHandler):
 
 	def render_home(self,title=""):
-			self.render("index.html")
+			self.render("loginAdmin.html")
 			
 	def get(self):
     		self.render_home()
