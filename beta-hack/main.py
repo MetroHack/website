@@ -54,7 +54,7 @@ class MainHandler(webapp2.RequestHandler):
 class Home(MainHandler):
 
 	def render_home(self,title=""):
-			self.render("index.html")
+			self.render("launcher.html")
 			
 	def get(self):
     		self.render_home()
@@ -62,7 +62,19 @@ class Home(MainHandler):
 	def post(self): 
 		self.render_home()
 
+class Admin(MainHandler):
+
+	def render_home(self,title=""):
+			self.render("test.html")
+			
+	def get(self):
+    		self.render_home()
+    		
+	def post(self): 
+		self.render_home()
+		
+
                     
-app = webapp2.WSGIApplication([ ('/', Home) ], debug=True) 
+app = webapp2.WSGIApplication([ ('/', Home), ('/admin', Admin) ], debug=True) 
 
 
