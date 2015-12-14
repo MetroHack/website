@@ -20,6 +20,10 @@ handlers:
   static_dir: less
 - url: /mail
   static_dir: mail
+- url: /scss
+  static_dir: scss
+- url: /partials
+  static_dir: partials   
 - url: /js
   static_dir: js        
 - url: .*
