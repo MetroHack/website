@@ -16,8 +16,11 @@ function adminLogin (form) {
     Parse.User.logIn(user, password, {
           success: function(user) {
           // Do stuff after successful login.
-              alert("Bienvenido");
-          //Aqui va el codigo para pasar a la siguiente pagina de admin
+              //alert("Bienvenido");
+              
+          //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
+              location.replace("http://www.w3schools.com");
+              
           },
           error: function(user, error) {
           // The login failed. Check error to see why.
