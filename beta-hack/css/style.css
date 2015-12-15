@@ -78,7 +78,7 @@ header[role=banner]::after {
     height: 80px;
   }
   header[role=banner] #cd-logo {
-    margin: 20px 0 0 5%;
+    margin: -20px 0 0 5%;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
