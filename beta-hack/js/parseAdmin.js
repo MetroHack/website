@@ -9,7 +9,7 @@ $(function() {
 function adminLogin (form) {
     
     //Creamos las variables del texto introducido por el usuario
-    var user =form.user.value;
+    var user = form.user.value;
     var password = form.password.value;
     
     //Metodo de Parse para login
