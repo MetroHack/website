@@ -33,16 +33,16 @@
 	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
 		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form">
+				<form class="cd-form" name="admin-login">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="Usuario">
+						<input class="full-width has-padding has-border" id="signin-email" type="text" placeholder="Usuario" name="user">
 						<span class="cd-error-message">Error!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Contraseña">
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Contraseña" name="password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Error!</span>
 					</p>
@@ -53,7 +53,7 @@
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width" type="submit" value="Login">
+						<input class="full-width" type="submit" value="Login" onClick="adminLogin(this.form)">
 					</p>
 				</form>
 				
