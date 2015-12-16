@@ -8,7 +8,7 @@ $(function() {
 
 //Funcion para hacer login
 function adminLogin (form) {
-    
+
     var user = new Parse.User();
     
     //Creamos las variables del texto introducido por el usuario
@@ -48,6 +48,6 @@ function adminLogin (form) {
          error: function(error) {
          alert("Error: " + error.code + " " + error.message);
          }
-    });
-
+    });   
 }
+    

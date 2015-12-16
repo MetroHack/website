@@ -36,6 +36,11 @@
 
         <link rel="stylesheet" type="text/css" href="css/launcher.css" />
         
+            <!-- Parse -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+        <script src="js/parseUserLogin.js"></script> <!-- parseAdmin --> 
+        
         
 	</head>
 	<body>            
@@ -56,7 +61,7 @@
                                 </ul>
 
                                 <div id="cd-login"> <!-- log in form -->
-                                    <form class="cd-form">
+                                    <form class="cd-form" name="normal-login">
                                         <p class="fieldset">
                                             <label class="image-replace cd-username" for="signin-email">E-mail</label>
                                             <input class="full-width has-padding has-border" id="signin-email" type="text" name="user" placeholder="Usuario">
@@ -65,7 +70,7 @@
 
                                         <p class="fieldset">
                                             <label class="image-replace cd-password" for="signin-password">Password</label>
-                                            <input class="full-width has-padding has-border" id="signin-password" type="text"  name="password" placeholder="Contraseña">
+                                            <input class="full-width has-padding has-border" id="signin-password" type="password"  name="password" placeholder="Contraseña">
                                             <a href="#0" class="hide-password">Hide</a>
                                             <span class="cd-error-message">Error message here!</span>
                                         </p>
@@ -76,7 +81,7 @@
                                         </p>
 
                                         <p class="fieldset">
-                                            <input class="full-width" type="submit" value="Login">
+                                            <input class="full-width" type="submit" value="Login" onClick="normalLogin(this.form)">
                                         </p>
                                     </form>
 
@@ -100,7 +105,7 @@
 
                                         <p class="fieldset">
                                             <label class="image-replace cd-password" for="signup-password">Password</label>
-                                            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Contraseña">
+                                            <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Contraseña">
                                             <a href="#0" class="hide-password">Hide</a>
                                             <span class="cd-error-message">Error message here!</span>
                                         </p>
@@ -119,7 +124,7 @@
                                 </div> <!-- cd-signup -->
 
                                 <div id="cd-reset-password"> <!-- reset password form -->
-                                    <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+                                    <p class="cd-form-message">Olvidaste tu Contraseña? Coloca tu E-mail. Recibiras un link para cambiarla.</p>
 
                                     <form class="cd-form">
                                         <p class="fieldset">
@@ -133,7 +138,7 @@
                                         </p>
                                     </form>
 
-                                    <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+                                    <p class="cd-form-bottom-message"><a href="#0">Regresa al Login</a></p>
                                 </div> <!-- cd-reset-password -->
                                 <a href="#0" class="cd-close-form">Close</a>
                             </div> <!-- cd-user-modal-container -->
@@ -141,7 +146,7 @@
                     
 <!-- ********************************************************TEMPLATE LOGIN******************************************************** -->
                        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+        
         <script src="js/main.js"></script> <!-- Gem jQuery -->
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
