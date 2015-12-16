@@ -20,6 +20,15 @@ jQuery(document).ready(function($){
 	//open login-form form
 	mainNav.on('click', '.cd-signin', login_selected);
 
+    
+    
+    	$(document).ready(function(){
+		$("#entrar").click(function(event){
+			//alert("You clicked me!");
+            login_selected();
+		});
+	});
+
 	//close modal
 	formModal.on('click', function(event){
 		if( $(event.target).is(formModal) || $(event.target).is('.cd-close-form') ) {

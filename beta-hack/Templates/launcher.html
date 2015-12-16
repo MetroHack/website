@@ -33,18 +33,116 @@
         <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	    <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
 	    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-        
+
         <link rel="stylesheet" type="text/css" href="css/launcher.css" />
         
         
 	</head>
-	<body>
+	<body>            
 		<div class="container demo-1">
 			<div class="content">
 				<div id="large-header" class="large-header">
 					<canvas id="demo-canvas"></canvas>
 					<h1 class="main-title">Metro<span class="thin">Hack</span></h1>
-                    <a class="entrar-button" href="#0">Entrar</a>
+                    <a class="entrar-button" href="#0" id="entrar">Entrar</a>
+                    
+                    
+<!-- ********************************************************TEMPLATE LOGIN******************************************************** -->
+                            <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+                            <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+                                <ul class="cd-switcher">
+                                    <li><a href="#0">Inicia Sesión</a></li>
+                                    <li><a href="#0">Regístrate</a></li>
+                                </ul>
+
+                                <div id="cd-login"> <!-- log in form -->
+                                    <form class="cd-form">
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-username" for="signin-email">E-mail</label>
+                                            <input class="full-width has-padding has-border" id="signin-email" type="text" name="user" placeholder="Usuario">
+                                            <span class="cd-error-message">Error message here!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-password" for="signin-password">Password</label>
+                                            <input class="full-width has-padding has-border" id="signin-password" type="text"  name="password" placeholder="Contraseña">
+                                            <a href="#0" class="hide-password">Hide</a>
+                                            <span class="cd-error-message">Error message here!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input type="checkbox" id="remember-me" checked>
+                                            <label for="remember-me">Recordar</label>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input class="full-width" type="submit" value="Login">
+                                        </p>
+                                    </form>
+
+                                    <p class="cd-form-bottom-message"><a href="#0">Olvidaste la Contraseña?</a></p>
+                                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                                </div> <!-- cd-login -->
+
+                                <div id="cd-signup"> <!-- sign up form -->
+                                    <form class="cd-form">
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-username" for="signup-username">Username</label>
+                                            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Usuario">
+                                            <span class="cd-error-message">Error message here!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                                            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                                            <span class="cd-error-message">Error message here!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-password" for="signup-password">Password</label>
+                                            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Contraseña">
+                                            <a href="#0" class="hide-password">Hide</a>
+                                            <span class="cd-error-message">Error message here!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input type="checkbox" id="accept-terms">
+                                            <label for="accept-terms">Acepto los <a href="#0">Términos</a></label>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input class="full-width has-padding" type="submit" value="Crea tu Cuenta">
+                                        </p>
+                                    </form>
+
+                                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                                </div> <!-- cd-signup -->
+
+                                <div id="cd-reset-password"> <!-- reset password form -->
+                                    <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+                                    <form class="cd-form">
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                                            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                                            <span class="cd-error-message">Error message here!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input class="full-width has-padding" type="submit" value="Reset password">
+                                        </p>
+                                    </form>
+
+                                    <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+                                </div> <!-- cd-reset-password -->
+                                <a href="#0" class="cd-close-form">Close</a>
+                            </div> <!-- cd-user-modal-container -->
+                        </div> <!-- cd-user-modal -->
+                    
+<!-- ********************************************************TEMPLATE LOGIN******************************************************** -->
+                       
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+        <script src="js/main.js"></script> <!-- Gem jQuery -->
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAF.js"></script>
