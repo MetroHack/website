@@ -30,5 +30,35 @@ function normalLogin (form) {
                             } 
                        });
 
+}
+
+
+
+function crearUsuario (form) {
     
+    var user = new Parse.User();
+    
+    //Creamos las variables del texto introducido por el usuario
+    var username = form.userNew.value;
+    var password = form.passwordNew.value;
+    var email = form.emailNew.vualue;
+    
+                                    //Metodo Parse para registrar usuarios
+                                    user.set("username", username);
+                                    user.set("password", password);
+                                    user.set("email", email);
+                                    user.set("admin", false);
+    
+
+                                    user.signUp(null, {
+                                      success: function(user) {
+                                        // Hooray! Let them use the app now.
+                                          alert("Registrado");
+                                      },
+                                      error: function(user, error) {
+                                        // Show the error message somewhere and let the user try again.
+                                        alert("Error: " + error.code + " " + error.message);
+                                      }
+                                    });
+
 }

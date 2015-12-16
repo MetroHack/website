@@ -93,30 +93,31 @@
                                     <form class="cd-form">
                                         <p class="fieldset">
                                             <label class="image-replace cd-username" for="signup-username">Username</label>
-                                            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Usuario">
+                                            <input class="full-width has-padding has-border" id="signup-username" type="text" name="userNew"  placeholder="Usuario">
                                             <span class="cd-error-message">Error message here!</span>
                                         </p>
 
                                         <p class="fieldset">
                                             <label class="image-replace cd-email" for="signup-email">E-mail</label>
-                                            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                                            <input class="full-width has-padding has-border" id="signup-email" type="email" name="emailNew" placeholder="E-mail">
                                             <span class="cd-error-message">Error message here!</span>
                                         </p>
 
                                         <p class="fieldset">
                                             <label class="image-replace cd-password" for="signup-password">Password</label>
-                                            <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Contraseña">
+                                            <input class="full-width has-padding has-border" id="signup-password" type="password" name="passwordNew" placeholder="Contraseña">
                                             <a href="#0" class="hide-password">Hide</a>
                                             <span class="cd-error-message">Error message here!</span>
                                         </p>
 
                                         <p class="fieldset">
+                                            <!--
                                             <input type="checkbox" id="accept-terms">
-                                            <label for="accept-terms">Acepto los <a href="#0">Términos</a></label>
+                                            <label for="accept-terms">Acepto los <a href="#0">Términos</a></label> -->
                                         </p>
 
                                         <p class="fieldset">
-                                            <input class="full-width has-padding" type="submit" value="Crea tu Cuenta">
+                                            <input class="full-width has-padding" type="submit" value="Crea tu Cuenta" onClick="crearUsuario(this.form)">
                                         </p>
                                     </form>
 

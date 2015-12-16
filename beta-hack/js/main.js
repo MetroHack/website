@@ -100,11 +100,11 @@ jQuery(document).ready(function($){
 	//REMOVE THIS - it's just to show error messages 
 	formLogin.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
-		formLogin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+		//formLogin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 	formSignup.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
-		formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+		//formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 
 

@@ -26,24 +26,28 @@ function adminLogin (form) {
                    //alert("Successfully retrieved " + results.length + " scores.");
                    // Do something with the returned Parse.Object values
 
+                              for (var i = 0; i < results.length; i++) {
+                              var object = results[i];
+                              //alert(username + password);
+                                  
+                                                   //Metodo de Parse para login
+                                                   Parse.User.logIn(username, password, {
+                                                         success: function(user) {
+                                                         // Do stuff after successful login.
+                                                         alert("Bienvenido " + username);
+
+                                                        //***************************************************
+                                                       //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
+                                                       //location.replace("http://www.w3schools.com");
+                                                        },
+                                                        error: function(user, error) {
+                                                       // The login failed. Check error to see why.
+                                                       alert("Clave o Usuario Incorrecto");
+                                                       } 
+                                                   });
+                              }
              
-                   //Metodo de Parse para login
-                   Parse.User.logIn(username, password, {
-                         success: function(user) {
-                         // Do stuff after successful login.
-                        //alert("Bienvenido");
-                             
-                        //***************************************************
-                       //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
-                       location.replace("http://www.w3schools.com");
-                        },
-                        error: function(user, error) {
-                       // The login failed. Check error to see why.
-                       alert("Clave o Usuario Incorrecto");
-                       } 
-                   });
-             
-             
+                         
          },
          error: function(error) {
          alert("Error: " + error.code + " " + error.message);
