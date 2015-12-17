@@ -22,7 +22,7 @@ function adminLogin (form) {
               //alert("Bienvenido");
               
           //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
-              location.replace("http://www.w3schools.com");
+              location.replace("http://beta-hack.appspot.com/adminHome");
               
           },
           error: function(user, error) {

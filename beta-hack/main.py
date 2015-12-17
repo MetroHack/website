@@ -72,9 +72,42 @@ class Admin(MainHandler):
     		
 	def post(self): 
 		self.render_home()
+
+class AdminHome(MainHandler):
+
+	def render_home(self,title=""):
+			self.render("indexAdmin.html")
+			
+	def get(self):
+    		self.render_home()
+    		
+	def post(self): 
+		self.render_home()
+
+class AdminEvent(MainHandler):
+
+	def render_home(self,title=""):
+			self.render("create_event.html")
+			
+	def get(self):
+    		self.render_home()
+    		
+	def post(self): 
+		self.render_home()
+
+class AdminHackers(MainHandler):
+
+	def render_home(self,title=""):
+			self.render("Hackers.html")
+			
+	def get(self):
+    		self.render_home()
+    		
+	def post(self): 
+		self.render_home()				
 		
 
                     
-app = webapp2.WSGIApplication([ ('/', Home), ('/admin', Admin) ], debug=True) 
+app = webapp2.WSGIApplication([ ('/', Home), ('/admin', Admin),('/adminevent', AdminEvent),('/adminhackers', AdminHackers),('/adminhome', AdminHome) ], debug=True) 
 
 
