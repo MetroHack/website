@@ -15,7 +15,6 @@ function adminLogin (form) {
     var username = form.user.value;
     var password = form.password.value;
     
-<<<<<<< HEAD
     //Metodo de Parse para login
     Parse.User.logIn(username, password, {
           success: function(user) {
@@ -32,7 +31,6 @@ function adminLogin (form) {
           }
     });
 }
-=======
     
     //Validamos que sea admin
     var admin = Parse.Object.extend("User");
@@ -73,4 +71,3 @@ function adminLogin (form) {
     });   
 }
     
->>>>>>> origin/master
