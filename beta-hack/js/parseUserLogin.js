@@ -41,7 +41,8 @@ function crearUsuario (form) {
     //Creamos las variables del texto introducido por el usuario
     var username = form.userNew.value;
     var password = form.passwordNew.value;
-    var email = form.emailNew.vualue;
+    var email = form.email.value;
+    alert("Email: " + email + " Username: " + username + " Password: " + password);
     
                                     //Metodo Parse para registrar usuarios
                                     user.set("username", username);
