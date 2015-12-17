@@ -23,7 +23,7 @@ function adminLogin (form) {
               //alert("Bienvenido");
               
           //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
-              location.replace("http://beta-hack.appspot.com/adminHome");
+              location.replace("http://beta-hack.appspot.com/adminhome");
               
           },
           error: function(user, error) {
