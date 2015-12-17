@@ -14,24 +14,7 @@ function adminLogin (form) {
     //Creamos las variables del texto introducido por el usuario
     var username = form.user.value;
     var password = form.password.value;
-    
-    //Metodo de Parse para login
-    Parse.User.logIn(username, password, {
-          success: function(user) {
-          // Do stuff after successful login.
-              //alert("Bienvenido");
-              
-          //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
-              location.replace("http://beta-hack.appspot.com/adminhome");
-              
-          },
-          error: function(user, error) {
-          // The login failed. Check error to see why.
-              alert("Clave o Usuario Incorrecto");
-          }
-    });
-}
-    
+      
     //Validamos que sea admin
     var admin = Parse.Object.extend("User");
     var query = new Parse.Query(admin);
@@ -54,7 +37,7 @@ function adminLogin (form) {
 
                                                         //***************************************************
                                                        //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
-                                                       //location.replace("http://www.w3schools.com");
+                                                       location.replace("http://beta-hack.appspot.com/adminhome");
                                                         },
                                                         error: function(user, error) {
                                                        // The login failed. Check error to see why.
