@@ -15,7 +15,6 @@ function adminLogin (form) {
     var username = form.user.value;
     var password = form.password.value;
     
-<<<<<<< HEAD
     //Metodo de Parse para login
     Parse.User.logIn(username, password, {
           success: function(user) {
@@ -23,7 +22,7 @@ function adminLogin (form) {
               //alert("Bienvenido");
               
           //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
-              location.replace("http://beta-hack.appspot.com/adminHome");
+              location.replace("http://beta-hack.appspot.com/adminhome");
               
           },
           error: function(user, error) {
@@ -32,7 +31,6 @@ function adminLogin (form) {
           }
     });
 }
-=======
     
     //Validamos que sea admin
     var admin = Parse.Object.extend("User");
@@ -73,4 +71,3 @@ function adminLogin (form) {
     });   
 }
     
->>>>>>> origin/master
