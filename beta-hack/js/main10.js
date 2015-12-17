@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 		toggleNav(false);
 	});
 	//select a new section
-	$('.cd-nav li').on('click', function(event){
+	$('.cd-nava li').on('click', function(event){ //Aqui cambie .cd-nav por .cd-nava para que no hiciera el efecto
 		event.preventDefault();
 		var target = $(this),
 			//detect which section user has chosen
