@@ -20,6 +20,15 @@ jQuery(document).ready(function($){
 	//open login-form form
 	mainNav.on('click', '.cd-signin', login_selected);
 
+    
+    
+    	$(document).ready(function(){
+		$("#entrar").click(function(event){
+			//alert("You clicked me!");
+            login_selected();
+		});
+	});
+
 	//close modal
 	formModal.on('click', function(event){
 		if( $(event.target).is(formModal) || $(event.target).is('.cd-close-form') ) {
@@ -91,11 +100,11 @@ jQuery(document).ready(function($){
 	//REMOVE THIS - it's just to show error messages 
 	formLogin.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
-		formLogin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+		//formLogin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 	formSignup.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
-		formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+		//formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 
 
