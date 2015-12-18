@@ -50,11 +50,22 @@ class MainHandler(webapp2.RequestHandler):
 		
 	def render(self,template, **kw):
 		self.write(self.render_str(template,**kw))
+
+class Login(MainHandler):
+
+	def render_home(self,title=""):
+			self.render("launcher.html")
+			
+	def get(self):
+    		self.render_home()
+    		
+	def post(self): 
+		self.render_home()
 			
 class Home(MainHandler):
 
 	def render_home(self,title=""):
-			self.render("launcher.html")
+			self.render("home.html")
 			
 	def get(self):
     		self.render_home()
@@ -108,6 +119,6 @@ class AdminHackers(MainHandler):
 		
 
                     
-app = webapp2.WSGIApplication([ ('/', Home), ('/admin', Admin),('/adminevent', AdminEvent),('/adminhackers', AdminHackers),('/adminhome', AdminHome) ], debug=True) 
+app = webapp2.WSGIApplication([ ('/', Login), ('/r', Home), ('/admin', Admin),('/adminevent', AdminEvent),('/adminhackers', AdminHackers),('/adminhome', AdminHome) ], debug=True) 
 
 

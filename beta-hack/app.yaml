@@ -22,6 +22,8 @@ handlers:
   static_dir: mail
 - url: /scss
   static_dir: scss
+- url: /up
+  static_dir: up.html  
 - url: /partials
   static_dir: partials   
 - url: /js
