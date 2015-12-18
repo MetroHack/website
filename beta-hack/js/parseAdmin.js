@@ -8,7 +8,7 @@ $(function() {
 
 //Funcion para hacer login
 function adminLogin (form) {
-
+    event.preventDefault();
     var user = new Parse.User();
     
     //Creamos las variables del texto introducido por el usuario

@@ -6,7 +6,7 @@ $(function() {
 });
 
 function normalLogin (form) {
-    
+    event.preventDefault();
     var user = new Parse.User();
     
     //Creamos las variables del texto introducido por el usuario
@@ -35,14 +35,14 @@ function normalLogin (form) {
 
 
 function crearUsuario (form) {
-    
+    event.preventDefault();
     var user = new Parse.User();
     
     //Creamos las variables del texto introducido por el usuario
     var username = form.userNew.value;
     var password = form.passwordNew.value;
     var email = form.email.value;
-    alert("Email: " + email + " Username: " + username + " Password: " + password);
+    //alert("Email: " + email + " Username: " + username + " Password: " + password);
     
                                     //Metodo Parse para registrar usuarios
                                     user.set("username", username);

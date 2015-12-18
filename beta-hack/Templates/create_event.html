@@ -12,6 +12,12 @@
 	<link rel="stylesheet" href="css/reset20.css"> <!-- CSS reset form -->
 	<link rel="stylesheet" href="css/style20.css"> <!-- Resource style form -->
 	<script src="js/modernizr20.js"></script> <!-- Modernizr form -->
+    
+    
+    <!--Parse -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+    <script src="js/parseCreateEvent.js"></script> <!-- parseCreateEvent --> 
   	
 	<title>MetroHack | Admin</title>
 </head>
@@ -41,22 +47,22 @@
 
 			<div class="icon">
 				<label class="cd-label" for="cd-name">Titulo</label>
-				<input class="user" type="text" name="cd-name" id="cd-name" required>
+				<input class="user" type="text" name="titulo" id="cd-name" required>
 		    </div> 
 
 		    <div class="icon">
 		    	<label class="cd-label" for="cd-company">Fecha</label>
-				<input class="company" type="text" name="cd-company" id="cd-company">
+				<input class="company" type="text" name="fecha" id="cd-company">
 		    </div> 
 
 			<div class="icon">
 				<label class="cd-label" for="cd-name">Lugar</label>
-				<input class="user" type="text" name="cd-name" id="cd-name" required>
+				<input class="user" type="text" name="lugar" id="cd-name" required>
 		    </div> 
 		    
 		    <div class="icon">
 		    	<label class="cd-label" for="cd-company">URL de la imagen</label>
-				<input class="company" type="text" name="cd-company" id="cd-company">
+				<input class="company" type="text" name="url" id="cd-company">
 		    </div> 
 	
 			<div>
@@ -64,12 +70,12 @@
 
 				<ul class="cd-form-list">
 					<li>
-						<input type="radio" name="radio-button" id="cd-radio-1" checked>
+						<input type="radio" name="registro" id="cd-radio-1" value="Si" checked>
 						<label for="cd-radio-1">Si</label>
 					</li>
 						
 					<li>
-						<input type="radio" name="radio-button" id="cd-radio-2">
+						<input type="radio" name="registro" id="cd-radio-2" value="No">
 						<label for="cd-radio-2">No</label>
 					</li>
 				</ul>
@@ -78,11 +84,11 @@
 
 			<div class="icon">
 				<label class="cd-label" for="cd-textarea">Descripción del evento</label>
-      			<textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+      			<textarea class="message" name="descripcion" id="cd-textarea" required></textarea>
 			</div>
 
 			<div>
-		      	<input type="submit" value="Crear Evento">
+		      	<input type="submit" value="Crear Evento" onClick="crearEvento(this.form)">
 		    </div>
 		</fieldset>
 	</form>
