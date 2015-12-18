@@ -40,8 +40,9 @@ function crearEvento (form) {
                 evento.save(null, {
                             success: function(gameScore) {
                             // Execute any logic that should take place after the object is saved.
-                            alert('New object created with objectId: ' + evento.id);
-                                location.reload();
+                            //alert('New object created with objectId: ' + evento.id);
+                            alert("Evento Creado");
+                            location.reload();
                             },
                             error: function(gameScore, error) {
                             // Execute any logic that should take place if the save fails.
