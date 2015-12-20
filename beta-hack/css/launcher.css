@@ -9,7 +9,7 @@
 	transform: translate3d(-50%,-50%,0);
  
 	padding: 10px 47px;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 1.5;
 	border-radius: 500px;
 	padding: 11px 47px 9px;
@@ -23,4 +23,11 @@
 	white-space: normal;
 	border: 1px solid rgba(255, 255, 255, 0.6);
   
+}
+
+.main-title {
+    style= font-size:70px; 
+    position: fixed; 
+    padding: 15px;    
+    
 }
