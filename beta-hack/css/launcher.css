@@ -1,3 +1,4 @@
+/*
 .entrar-button {
 	position: absolute;
 	margin: 0;
@@ -28,6 +29,102 @@
 .main-title {
     style= font-size:70px; 
     position: fixed; 
-    padding: 15px;    
+    padding: 15px;   
+    
+}
+*/
+
+
+.declaration h1 {
+  display: inline-block;
+  font-weight: 400;
+  padding: 7px 10px;
+}
+
+
+.entrar-button {
+	position: absolute;
+	margin: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 63%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+    padding: 10px 47px;
+	font-size: 20px;
+	line-height: 1.5;
+	border-radius: 500px;
+	padding: 11px 47px 9px;
+	-webkit-transition: background-color .15s ease,border-color .15s ease,color .15s ease;
+	-o-transition: background-color .15s ease,border-color .15s ease,color .15s ease;
+	transition: background-color .15s ease,border-color .15s ease,color .15s ease;
+	border-width: 0;
+	letter-spacing: 1.2px;
+	min-width: 130px;
+	text-transform: uppercase;
+	white-space: normal;
+	border: 1px solid rgba(255, 255, 255, 0.6);   
+}
+
+
+@media (max-width: 480px){
+    
+.declaration h1 {
+  padding: 4px 5px;
+  font-size: 20px;
+}
+    
+.declaration a {
+  font-size: 15px;
+  margin-top: 0;
+  top: 83%;
+}
+    
+}
+
+
+
+@media (min-width: 480px) and (max-width: 767px){
+    
+.declaration h1 {
+  padding: 4px 5px;
+  font-size: 25px;
+}
+    
+.declaration a {
+  font-size: 17px;
+  top: 83%;
+}
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 969px){
+    
+.declaration h1 {
+  padding: 4px 5px;
+  font-size: 30px;
+}
+    
+.declaration a {
+  font-size: 20px;
+  top: 83%;
+}
+    
+}
+
+
+@media (min-width: 970px) and (max-width: 1169px){
+    
+.declaration h1 {
+  padding: 4px 5px;
+  font-size: 30px;
+}
+    
+.declaration a {
+  font-size: 20px;
+  top: 73%;
+}
     
 }
