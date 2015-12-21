@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- First they ignore you, then they laugh at you, then they fight you, then you win. - Mohandas Karamchand Gandhi -->
+<html lang="en">
+  <head>
+
+<!-- Typography -->
+  <link rel="stylesheet" id="js-hr-typography" type="text/css" href="https://d3keuzeb2crhkn.cloudfront.net/lib/typography/345134/hosts/https/d3keuzeb2crhkn.cloudfront.net/18B4787628E33E7CA.css" data-noprefix />
+  <link href="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/external_libraries-524397ed37d6e7cbe7f84366bf11a563.css" media="all" rel="stylesheet" />
+  <link href="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/external-core-16aabb6410d5786be1e76df932852ac4.css" media="all" rel="stylesheet" />
+  <link href="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/hackerrank-3dd3350d05de60f624d7eec7dfdedfa6.css" media="all" rel="stylesheet" />
+
+<!-- Style -->
+ <link rel="stylesheet" href="css/event.css">	
+
+  <title>MetroHack</title>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<script src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/base-acb746b38fbd815ee2286731e8196e5b.js"></script>
+
+
+<script>
+ if (typeof(jQuery) != "function" && !jsCookies.get("jQueryError") && (window.location.href.split("jQueryError=1").length == 1)) {
+   // set 10 mins cookie
+   var current_cdn = jsCookies.get("cdn_url");
+   jsCookies.set("jQueryError", 1, 0, 0, 10);
+   jsCookies.set("cdn_url", 1, 0, -1);
+
+   // reload the page
+   separator = (window.location.href.split("?").length > 1) ? "&" : "?";
+   if (navigator.appName == "Microsoft Internet Explorer") {
+     window.document.execCommand('Stop');
+   } else {
+     window.stop();
+   }
+   window.location.href = window.location.href + separator + "jQueryError=1&current_cdn=" + encodeURIComponent(current_cdn);
+
+   //stop JavaScript execution
+   throw new Error("StopExec");
+ } else {
+   // if it worked, remove jQueryError
+   if (jsCookies.get("jQueryError")) {
+     jsCookies.set("jQueryError", 1, 0, -1);
+   }
+ }
+</script>
+
+<body id="contest_page">
+    <div class="contests_landing">
+      <div class="top-logo">
+			<!-- Imagen del fondo -->
+      </div>
+    </div>
+     <div class="contest_header msT text-center txt-white">
+         <pre class="tagline_adobe">TITULO</pre>
+    </div>
+    <div class="navigation">
+            <nav>
+                <div class="container">
+                <a href="metro-hack.appspot.com" class="pull-left brand"><img src="" alt=""></a>
+                <ul class="pull-right">
+                    <li>
+                        <a href data-id="about-us">_Descripción</a>
+                    </li>
+                        <li>
+                        <a href data-id="prizes">_Fecha</a>
+                    </li>
+                    <li>
+                        <a href data-id="rules">_Localización</a>
+                    </li>
+                    <li>
+                        <a href data-id="scoring">_Registro</a>
+                    </li>
+                </ul>
+               </div>
+            </nav>
+    </div>
+
+        <div class="sections fill-grey" id="about-us">
+            <div class="container">
+                <div class="container text-center">
+                    <div  class="inner-block">
+                        <header class="text-center">_Descripción</header>
+                        <div class="inner-text-container">
+                            <p class="pjT"><p>Get ready to unleash your passion and stretch your potential. This contest is open to all for participation, but only students in India based colleges are eligible for prizes and career opportunities. </p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sections fill-grey" id="prizes">
+            <div class="container">
+                <div class="container text-center">
+                    <div  class="inner-block">
+                        <header class="text-center">_Fecha</header>
+                        <div class="inner-text-container">
+                            <p class="pjT"><p>Get ready to unleash your passion and stretch your potential. This contest is open to all for participation, but only students in India based colleges are eligible for prizes and career opportunities. </p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sections fill-grey" id="rules">
+            <div class="container">
+                <div class="container text-center">
+                    <div  class="inner-block">
+                        <header class="text-center">_Locacalización</header>
+                        <div class="inner-text-container">
+                            <p class="pjT"><p>Get ready to unleash your passion and stretch your potential. This contest is open to all for participation, but only students in India based colleges are eligible for prizes and career opportunities. </p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="sections" id="scoring">
+        <div class="container scoring">
+            <header class="text-center mjB">_Registro</header>
+            <div class="inner-text-container">
+          			Boton
+            </div>
+        </div>
+    </div>
+
+    <div class="plT plB static-footer fill-dark">
+  <div class="container--flex">
+    <div class="row mlT mlB">
+      <div style="align:center;">
+        <p>&copy; 2016 MetroHack</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+    var starttime = new Date(0);
+    starttime.setUTCSeconds(1446273000);
+    $(".start-time").html(moment(starttime).format("MMM D YYYY") + ", " + moment(starttime).format("hh:mm a") + HR.util.timezone_abbr());
+
+    var endtime = new Date(0);
+    endtime.setUTCSeconds(1446287400);
+    $(".end-time").html(moment(endtime).format("MMM D YYYY") + ", " + moment(endtime).format("hh:mm a") + HR.util.timezone_abbr());
+});
+
+
+// This is for fixed header thing. please dont mess
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 900) {
+        $("nav").addClass("fixed");
+    }else{
+        $("nav").removeClass("fixed");
+    }
+});
+
+// Smooth scrolling :o
+$("nav li a").click(function(e){
+    e.preventDefault();
+    var offset = 20;
+    var dataid = $(this).data("id");
+    $('html, body').animate({
+        scrollTop: $("#"+dataid).offset().top - offset
+    }, 1000);
+});
+</script>
+
+  
+    <script src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/external_libraries-1443d5ec383061db944ce237cd00a854.js"></script>
+    <script src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/fitvids/jquery.fitvids-6d2e7e1eb472dfe322cbe38eebe09756.js"></script>
+
+</html>

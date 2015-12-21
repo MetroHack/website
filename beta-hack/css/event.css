@@ -1,0 +1,274 @@
+    body, h1, h2, h3, h4, h5, h6{
+      font-family: "Courier";
+    }
+    .container{
+        width: 100%;
+        max-width: 960px;
+        min-width: 0;
+        padding: 0px 20px;
+    }
+    .navigation{
+        height: 72px;
+        overflow: hidden;
+    }
+    .contests_landing{
+      position: relative;
+      background: url(https://hrcdn.net/contests/adobe-2015/bg.jpg) no-repeat;
+      background-size: cover;
+      background-position: center 42%;
+      min-height: 68vh;
+    }
+    .contests_landing svg{
+        margin-top: 15px;
+    }
+    .contest-signup-stub {
+      max-width: 500px;
+      width: auto !important;
+    }
+    .contest-signup-stub br {
+        display: none !important;
+    }
+    .presents{
+        margin-top: -15px;
+        display: block;
+        color: #fff;
+    }
+    .navigation{
+        text-align: center;
+        position: relative;
+    }
+    .navigation ul li{
+        list-style-type: none;
+        display: inline-block;
+    }
+    .navigation ul li a{
+        display: inline-block;
+        padding: 25px 16px;
+        font-size: 16px;
+        color: #333;
+        text-shadow: -1px 0 1px #fae533;
+    }
+    .right-side{
+        margin-left: 0px;
+    }
+    .right-side ul li{
+        list-style-type: none;
+        margin-bottom: 5px;
+    }
+    .sections{
+        padding: 40px 0px;
+    }
+
+    .sections header {
+      margin-bottom: 30px;
+      font-weight: 100;
+      font-size: 36px;
+      text-align: left !important;
+      text-shadow: -3px 0 0 #fae533;
+    }
+
+    .ticks{
+        width: 30px;
+        /*margin-right: 20px;*/
+    }
+    .rules ul li, .scoring ul li{
+        list-style-type: none;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .contest_header {
+      background: #b4b4b4;
+      color: #ffffff;
+      margin-top: 0;
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    .contest_header {
+      background: #000000;
+      -webkit-box-shadow: 0px -4px 5px -1px rgba(204,204,204,1);
+-moz-box-shadow: 0px -4px 5px -1px rgba(204,204,204,1);
+box-shadow: 0px -4px 5px -1px rgba(204,204,204,1);
+    }
+    .timer {
+      background: none !important;
+      font-family: "Courier";
+        color: #ffffff !important;
+
+    }
+    .contest_header h1{
+        font-size: 36px;
+        color: #000;
+    }
+    .x-footer-number a{
+        color: #4691f6 !important;
+    }
+    .inner-block{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .tpoint{
+        /*width: calc(100% - 30px);*/
+    }
+
+    nav{
+        box-shadow: 0px 6px 5px -3px #ddd;
+    }
+
+    /* This is for fixed header. */
+    .fixed{
+        position: fixed;
+        top: 0;
+        background: #ffffff;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 999;
+    }
+
+    /* This is v4 timer i think. will move to seperate view*/
+    .timer{
+      width: 65px;
+      display: inline-block;
+      background: #fff;
+      color: #333;
+      border-radius: 5px;
+      height: 52px;
+      padding: 6px 0px 1px 0px;
+    }
+    .timer span{
+      display: inline-block;
+      font-size: 14px;
+      line-height: normal;
+    }
+    .timer .num{
+      display: block;
+      font-size: 30px;
+      line-height: 1.1;
+        margin-bottom: -9px;
+    }
+    .timer_box{
+      width: 300px;
+      margin: auto;
+      padding: 0 0 20px 0;
+    }
+
+    .top-logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      max-width: 960px;
+    }
+
+    .top-logo img {
+      max-width: 100%;
+      width: 80px;
+    }
+    /* time css ends*/
+
+    @media screen and (min-width:960px){
+        .container{
+            /*width: 960px;*/
+            padding: 0px;
+        }
+
+        .inner-block{
+            text-align: left;
+        }
+
+        .tpoint{
+            /*width: 910px;*/
+        }
+        .right-side{
+            margin-left: 20px;
+        }
+    }
+    .contest-time{
+        width: 285px;
+        height: 35px;
+    }
+    ul {
+        list-style-position: inside;
+    }
+        pre.tagline_adobe{
+          font-family: "Courier";
+          background: transparent;
+          color: #ffffff;
+          border: none;
+          padding-bottom: 0;
+          font-size: 16px;
+        }
+        .action-button {
+          font-size:13px !important;
+            background: none !important;
+            padding: 10px 41px !important;
+            border-radius: 40px !important;
+            border-color: #fff02a !important;
+            color: #fff02a !important;
+        }
+        .action-button:hover {
+          background: #fff02a !important;
+          color: #000 !important;
+        }
+      .brand {
+        width: 235px;
+      }
+      .brand img{
+        max-width: 100%;
+      }
+
+      .blue {
+        color: #0099ff;
+      }
+      #prizes {
+        background: #ffe32a;
+      }
+
+      #prizes header {
+        text-shadow: -3px 0 0 #ffffff;
+      }
+      #rules {
+        background: #f5f5f5;
+      }
+      #scoring {
+        background-image: url(https://hrcdn.net/contests/adobe-2015/art.png);
+        background-position: 0px 170px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .static-footer {
+        background: #000000;
+      }
+      .inner-text-container {
+        padding-left: 20px;
+      }
+  @media (min-width: 0px) and (max-width: 540px) {
+    .contests_landing {
+      background-size: 100%;
+      background-position: top;
+      min-height: 135px;
+    }
+    .top-logo img {
+      width: 45px;
+    }
+    .brand {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    .brand img {
+      width: 180px;
+    }
+    .navigation {
+      height: auto;
+    }
+    .navigation nav ul {
+      float: none;
+    }
+    .navigation nav ul li a {
+      font-size: 14px;
+      padding: 0px 5px 10px 5px;
+    }
+  }
