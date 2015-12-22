@@ -13,11 +13,12 @@
     }
     .contests_landing{
       position: relative;
-      background: url(https://hrcdn.net/contests/adobe-2015/bg.jpg) no-repeat;
+      background: url(http://41.media.tumblr.com/55379fb900aea2d9c68812462beec5b0/tumblr_nrejpwEcVx1qbwnuho2_1280.jpg) no-repeat;
       background-size: cover;
       background-position: center 42%;
       min-height: 68vh;
-  
+  	  background-size: 2,880px 1,073px;
+  	  
     }
     .contests_landing svg{
         margin-top: 15px;
