@@ -633,8 +633,14 @@ main.scale-down {
 .cd-content h1 {
   max-width: 800px;
   margin: 3em;
-  line-height: 2;
 }
+
+.cd-content li {
+  max-width: 800px;
+  margin: 3em;
+  line-height: 1;
+}
+
 
 .no-js main, .no-js .cd-section {
   height: auto;

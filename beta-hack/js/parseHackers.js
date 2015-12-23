@@ -3,7 +3,7 @@ $(function() {
   //Inicializar Parse
     Parse.initialize("pVQEqn1cuqxLP8BL0LSbkB18p9Tii4wWi9EMfuzv", "6cceoL2U1WqxgUUls7dFj7CHwyEZeN47vTxySufM");
    // checkLogin();
-   // getUsuarios();
+    getUsuarios();
 });
 
 
@@ -22,22 +22,21 @@ function getUsuarios(){
     var query = new Parse.Query(Usuario);
     query.find({
           success: function(results) {
-                alert("Successfully retrieved " + results.length + " scores.");
+                var output = "";
+                //alert("Successfully retrieved " + results.length + " scores.");
                 // Do something with the returned Parse.Object values
                 for (var i = 0; i < results.length; i++) {
                   var object = results[i];
                 
-                  var output = "";
                   var username = object.get('username');
                   var email = object.get('email');
-                  output += "<ul>";
-                  output += "<li>"+username+"</li>";
-                  output += "<li>"+email+"</li>";
-                  output += "</ul>";
+                  output += "<li>";
+                  output += "<h1>"+"Username: "+username+"     |     "+" Email: "+email+"</h1>";
+                  output += "</li>";
 
                 }
               
-              $("#lista-usuarios").html(output);
+              $("#lista-usuario").html(output);
               
               //$("#lista-usuarios").html(output);
           },
