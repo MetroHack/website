@@ -33,5 +33,10 @@ function getEvent(){
           error: function(error) {
                 alert("Error: " + error.code + " " + error.message);
           }
+          
+          
     });    
+    
+    	document.getElementById("demo").innerHTML = "Hello Dolly.";
 }
+
