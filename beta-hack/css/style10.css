@@ -630,6 +630,12 @@ main.scale-down {
   color: #78626a;
 }
 
+.cd-content h1 {
+  max-width: 800px;
+  margin: 2em auto;
+  line-height: 2;
+}
+
 .no-js main, .no-js .cd-section {
   height: auto;
   overflow: visible;
