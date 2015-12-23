@@ -24,18 +24,25 @@ function crearEvento (form) {
     var lugar = form.lugar.value;
     var url = form.url.value;
     var descripcion = form.descripcion.value;
-    var registro = form.registro.value;
+    //var registroUsuario = form.registro.value;
     var registroBoolean = true;
+    var registro = document.getElementsByName("registro");
     
-    if (registro == 'Si'){
-        //alert('Funciona');
-        registroBoolean = true;
-    }else{
-        //alert('NOO Funciona');
-        registroBoolean = false;
+    //Aqui validamos la opcion marcada en Registro. Si o No
+    for (var i = 0; i < registro.length; i++) {
+        if (registro[i].checked) {
+            //alert("radioButton " + i + ": " + radioButtons[i].value);
+            
+                  if(registro[i].value == 'Si'){
+                      registroBoolean = true;
+                      //alert("Funciona");
+                  }else{
+                      registroBoolean = false;
+                      //alert("No Funciona");
+                  }
+        }
     }
     
-    //alert(titulo + fecha + lugar + url + descripcion + registroBoolean);
     
     var Evento = Parse.Object.extend("Event");
     var evento = new Evento(); 
