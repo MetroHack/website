@@ -34,10 +34,17 @@ function getEvent(){
                   document.getElementById("fecha").innerHTML = fecha;
                   document.getElementById("lugar").innerHTML = lugar;
 		
-		
-       			   $('.contests_landing').css('background-image', 'url(imagen)');
-       			  //document.getElementById("imagen").style.backgroundImage = "url(imagen)";
+					//imagen
+					if (imagen == ""){
+						//automaticamente se coloca la imagen default que esta en el css
+					}
+					else{
+						$('.contests_landing').css("background-image", "url("+imagen+")"); 
+       			   		//$('.contests_landing').css('background-image', 'url(imagen)');
+       			  		//document.getElementById("imagen").style.backgroundImage = "url(imagen)";
+       			  	}
        			  
+       			  //Registro
        			  var r = document.getElementById('registroBoton');
        			  if (Boolean(registro)){
        			  	   r.style.display = "block";
