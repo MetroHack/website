@@ -19,7 +19,7 @@ function getEvent(){
                 for (var i = 0; i < results.length; i++) {
                   var object = results[i];
                     
-                  //*******************ESTEBAN Y LUIS****************************
+                  //*******************ESTEBAN Y LUIS (Gay)****************************
                   //*************************************************************
                   //AQUI ESTAN LAS VARIABLES DE LOS EVENTOS, USENLOS COMO QUIERAN//patico
                   var titulo = object.get('titulo');
