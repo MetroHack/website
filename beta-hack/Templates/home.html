@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html style="" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" class=" js flexbox canvas no-touch hashchange rgba multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage svg inlinesvg bgsizecover raf no-flexboxtweener no-mobile no-phone no-tablet mobilegradea" lang="en"><head>
+<html ng-app="WebApp" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" class=" js flexbox canvas no-touch hashchange rgba multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage svg inlinesvg bgsizecover raf no-flexboxtweener no-mobile no-phone no-tablet mobilegradea" lang="es" >
+<head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
                   <!--[if !IE]> -->
-      <script src="../js/056bbe16c3" type="text/javascript"></script>
-      <script src="../js/nr-686.js"></script>
-      <script src="../js/linkid.js" async="" type="text/javascript"></script>
-      <script src="../js/b0R.js" async="" type="text/javascript"></script>
-      <script src="../js/beacon.js" async=""></script>
-      <script src="../js/fbds.js" async=""></script>
-      <script src="../js/conversion_async.js" async="" type="text/javascript"></script>
-      <script src="../js/analytics.js" async=""></script>
-      <script src="../js/sp-analytics.js" async="" type="text/javascript"></script>
-      <script src="../js/gtm.js" async=""></script>
-      <script src="../js/jquery-2.js"></script>
+      <script src="js/nr-686.js"></script>
+      <script src="js/linkid.js" async="" type="text/javascript"></script>
+      <script src="js/b0R.js" async="" type="text/javascript"></script>
+      <script src="js/beacon.js" async=""></script>
+      <script src="js/fbds.js" async=""></script>
+      <script src="js/conversion_async.js" async="" type="text/javascript"></script>
+      <script src="js/analytics.js" async=""></script>
+      <script src="js/sp-analytics.js" async="" type="text/javascript"></script>
+      <script src="js/gtm.js" async=""></script>
+      <script src="js/jquery-2.js"></script>
+    <script src="js/jquery/dist/jquery.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script src="js/parseHome.js"></script>
     <!-- <![endif]-->
 
     <!--[if gte IE 9]>
@@ -24,7 +27,7 @@
       <script src="//d2c87l0yth4zbw.global.ssl.fastly.net/js/vendor/jquery-1.11.0.min.96ef3ca5.js"></script>
     <![endif]-->
       
-          <script src="./js/146312396.js"></script>
+          <script src="js/146312396.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <meta name="description" content="Spotify is a digital music service that gives you access to millions of songs.">
       <meta name="keywords" content="Spotify, music, online, listen, streaming, play, digital, album, artist, playlist">
@@ -114,14 +117,14 @@ spweb.config = {
 };
       </script>
     
-  <script src="../js/sessioncam_002.js" type="text/javascript"></script>
+  <script src="js/sessioncam_002.js" type="text/javascript"></script>
   <script src="aspx/config.aspx" type="text/javascript"></script>
   <style id="ki-q_z-qg" type="text/css"></style>
   <style id="ki-q_z-qq" type="text/css"></style>
   
   </head>
 
-      <body class=" m-uk l-en page-homepage  is-loggedin  reboot ">
+      <body class=" m-uk l-en page-homepage  is-loggedin  reboot " >
           <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-7BJJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -396,7 +399,7 @@ show you ads based on your interests. By using our website, you agree to
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="noticiasController as noticias">
   <div class="row">
     <div class="col-sm-5 amarrillo">
       <div class="row">
@@ -415,8 +418,10 @@ show you ads based on your interests. By using our website, you agree to
       </div>
     </div>
     <div class="col-sm-7 col-albums">
-      <div class="row">
-        <div class="col-xs-6 col-album bg-gray" ><h3>Noticia 1</h3></div>
+      <div class="row" ng-repeat=" new in noticias.noticias">
+        <div class="col-xs-6 col-album bg-gray"><h3>     </h3>
+
+        </div>
         <div class="col-xs-6 col-album bg-gray-lighter"><h3>Noticia 2</h3></div>
         <div class="col-sm-4 col-album hidden-xs bg-gray-light"><h3>Noticia 3</h3></div>
         <div class="col-sm-4 col-album hidden-xs bg-gray-lightest" ><h3>Noticia 4</h3></div>
@@ -623,7 +628,7 @@ show you ads based on your interests. By using our website, you agree to
 
   </div>
 
-                            <script type="text/javascript" src="prueba_files/sessioncam.js"></script>
+                            <script type="text/javascript" src="js/sessioncam.js"></script>
 
                   <script>
 
@@ -658,6 +663,7 @@ show you ads based on your interests. By using our website, you agree to
         })(window, document);
     })();
 </script>
+
         <script>
             spAnalytics.init(null, {apiEndpoint: '/uk/spotify/framework/analytics/track/'})
         </script>
@@ -669,17 +675,16 @@ show you ads based on your interests. By using our website, you agree to
 ga("set","dimension4",google_tag_manager["GTM-7BJJ"].macro('gtm1450201830838'));var json=google_tag_manager["GTM-7BJJ"].macro('gtm1450201830839');if(json)try{var utm=JSON.parse(json);utm&&(utm.utm_campaign&&ga("set","campaignName",utm.utm_campaign),utm.utm_source&&ga("set","campaignSource",utm.utm_source),utm.utm_medium&&ga("set","campaignMedium",utm.utm_medium),utm.utm_content&&ga("set","campaignContent",utm.utm_content),utm.utm_term&&ga("set","campaignKeyword",utm.utm_term))}catch(a){}window.optimizely=window.optimizely||[];window.optimizely.push(["activateUniversalAnalytics"]);
 ga("require","displayfeatures");ga("require","linkid");ga("require","linker");ga("linker:autoLink",[google_tag_manager["GTM-7BJJ"].macro('gtm1450201830840')]);ga("send","pageview");</script>
 
-<script id="" type="text/javascript">var _kiq=_kiq||[];(function(){setTimeout(function(){var a=document,b=a.getElementsByTagName("script")[0],a=a.createElement("script");a.type="text/javascript";a.async=!0;a.src="//s3.amazonaws.com/ki.js/51746/b0R.js";b.parentNode.insertBefore(a,b)},1)})();</script><script src="prueba_files/spotify-7436afc376.js" id="" type="text/javascript"></script><script id="" type="text/javascript">(function(){var a=window._fbq||(window._fbq=[]);if(!a.loaded){var b=document.createElement("script");b.async=!0;b.src="//connect.facebook.net/en_US/fbds.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);a.loaded=!0}a.push(["addPixelId","252834944896917"])})();window._fbq=window._fbq||[];window._fbq.push(["track","PixelInitialized",{}]);</script>
+<script id="" type="text/javascript">var _kiq=_kiq||[];(function(){setTimeout(function(){var a=document,b=a.getElementsByTagName("script")[0],a=a.createElement("script");a.type="text/javascript";a.async=!0;a.src="//s3.amazonaws.com/ki.js/51746/b0R.js";b.parentNode.insertBefore(a,b)},1)})();</script><script src="js/spotify-7436afc376.js" id="" type="text/javascript"></script><script id="" type="text/javascript">(function(){var a=window._fbq||(window._fbq=[]);if(!a.loaded){var b=document.createElement("script");b.async=!0;b.src="//connect.facebook.net/en_US/fbds.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);a.loaded=!0}a.push(["addPixelId","252834944896917"])})();window._fbq=window._fbq||[];window._fbq.push(["track","PixelInitialized",{}]);</script>
 <noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=252834944896917&amp;ev=NoScript"></noscript>
 <script id="" type="text/javascript">var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"15654041"});(function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src=("https:"==document.location.protocol?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";b.parentNode.insertBefore(a,b)})();</script>
 <noscript>
   <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=15654041&amp;cv=2.0&amp;cj=1">
 </noscript>
 <script id="" type="text/javascript">(function(){getCookie=function(){var c=window.document.cookie.split(";"),b;for(b=0;b<c.length;b+=1){for(var a=c[b];" "==a.charAt(0);)a=a.substring(1,a.length);if(0==a.indexOf("justRegistered"))return a.substring(14,a.length)}return null};var c=getCookie();c&&-1<c.indexOf(1)&&(window.dataLayer.push({event:"registration_flow_complete"}),window.document.cookie="justRegistered\x3dnull;path\x3d/;domain\x3d.spotify.com")})();</script><script id="" type="text/javascript">"undefined"==typeof _campanja_config?(_campanja_config={preload:[]},set_sitewide_config(),_campanja_track=function(a,b,c){_campanja_config.preload.push([a,b,c])}):set_sitewide_config();function set_sitewide_config(){_campanja_config.tg="13756";_campanja_config.override_href=document.location.href;_campanja_config.internal=/^https?:\/\/[^/]*spotify.com|^https?:\/\/[^/]*paypal.com/i}var _campanja_track=function(a,b,c){_campanja_config.preload.push([a,b,c])};
-(function(a){var b=a.getElementsByTagName("head")[0];a=a.createElement("script");a.type="text/javascript";a.async=!0;a.src=document.location.protocol+"//script.campanja.com/script";b.appendChild(a)})(document);</script><script src="prueba_files/oct.js" id="" type="text/javascript"></script>
+(function(a){var b=a.getElementsByTagName("head")[0];a=a.createElement("script");a.type="text/javascript";a.async=!0;a.src=document.location.protocol+"//script.campanja.com/script";b.appendChild(a)})(document);</script><script src="js/oct.js" id="" type="text/javascript"></script>
 <div id="ttdUniversalPixelTag97af233fba6b42d7bdb45e25387ba301" style="display:none">
   <script src="js/up_loader.js" id="" type="text/javascript"></script>
-  <script id="" type="text/javascript">(function(a){"function"===typeof TTDUniversalPixelApi&&(a=new TTDUniversalPixelApi,a.init("6edr100",["arf8d2q"],"https://insight.adsrvr.org/track/up","ttdUniversalPixelTag97af233fba6b42d7bdb45e25387ba301"))})(this);</script><iframe src="prueba_files/up.html" style="visibility:hidden;" allowtransparency="true" id="universal_pixel" width="0" height="0"></iframe>
 </div>
 <script id="" type="text/javascript">twttr.conversion.trackPid("l61bk",{tw_sale_amount:0,tw_order_quantity:0});</script>
 <noscript>

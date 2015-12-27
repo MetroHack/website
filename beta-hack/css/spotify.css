@@ -63,7 +63,8 @@
     background-color: yellow;
 }
 .jumbotron-yim-2015 {
-    /* background-color: #f037a5; */
     padding: 60px 30px;
     background-image: url("../img/reto-unime.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
