@@ -1368,6 +1368,7 @@ body > .navbar-collapse[data-color="purple"]:after {
   border: 0;
   font-size: 16px;
   border-radius: 0;
+  min-height: 61px;
 }
 .navbar .navbar-brand {
   font-weight: 400;
