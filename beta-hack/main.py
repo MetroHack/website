@@ -65,7 +65,7 @@ class Login(MainHandler):
 class Home(MainHandler):
 
 	def render_home(self,title=""):
-			self.render("home.html")
+			self.render("homeBeta.html")
 			
 	def get(self):
     		self.render_home()
