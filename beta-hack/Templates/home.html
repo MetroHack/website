@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html ng-app="WebApp" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" class=" js flexbox canvas no-touch hashchange rgba multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage svg inlinesvg bgsizecover raf no-flexboxtweener no-mobile no-phone no-tablet mobilegradea" lang="es" >
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" class=" js flexbox canvas no-touch hashchange rgba multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage svg inlinesvg bgsizecover raf no-flexboxtweener no-mobile no-phone no-tablet mobilegradea" lang="es" >
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
                   <!--[if !IE]> -->
       <script src="js/nr-686.js"></script>
       <script src="js/linkid.js" async="" type="text/javascript"></script>
@@ -31,8 +30,8 @@
       
           <script src="js/146312396.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="description" content="Spotify is a digital music service that gives you access to millions of songs.">
-      <meta name="keywords" content="Spotify, music, online, listen, streaming, play, digital, album, artist, playlist">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
 
               <meta property="fb:app_id" content="174829003346">
         <meta property="og:title" content="MetroHACK webside">
@@ -45,7 +44,7 @@
     
     <title>MetroHack</title>
 
-          <link rel="icon" href="https://d2c87l0yth4zbw-2.global.ssl.fastly.net/i/_global/favicon.png">
+
       <!--[if IE]><link rel="shortcut icon" href="//d2c87l0yth4zbw.global.ssl.fastly.net/i/_global/favicon.ico"><![endif]-->
     
       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://d2c87l0yth4zbw.global.ssl.fastly.net/i/_global/touch-icon-144.png">
@@ -53,7 +52,7 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://d2c87l0yth4zbw.global.ssl.fastly.net/i/_global/touch-icon-72.png">
       <link rel="apple-touch-icon-precomposed" href="https://d2c87l0yth4zbw-2.global.ssl.fastly.net/i/_global/touch-icon-57.png">
     
-      <link rel="canonical" href="https://www.spotify.com/">
+      <link rel="canonical" href="">
     
       <link rel="stylesheet" href="../css/spotify.css">
   
@@ -126,7 +125,7 @@ spweb.config = {
   
   </head>
 
-      <body class=" m-uk l-en page-homepage  is-loggedin  reboot " >
+      <body class=" m-uk l-en page-homepage  is-loggedin  reboot " ng-app="WebApp">
           <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-7BJJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -401,7 +400,7 @@ show you ads based on your interests. By using our website, you agree to
   </div>
 </div>
 
-<div class="container-fluid" ng-controller="noticiasController as noticias">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm-5 amarrillo">
       <div class="row">
@@ -419,15 +418,14 @@ show you ads based on your interests. By using our website, you agree to
         </div>
       </div>
     </div>
-    <div class="col-sm-7 col-albums">
-      <div class="row" ng-repeat=" new in noticias.noticias">
-        <div class="col-xs-6 col-album bg-gray"><h3>     </h3>
+    <div class="col-sm-7 col-albums" ng-controller="NoticiasController">
+      <div class="row" ng-init="getNoticias()">
+            <ul>
+                <li ng-repeat="noti in noticias">
+                    {{noti}}
+                </li>
+            </ul>
 
-        </div>
-        <div class="col-xs-6 col-album bg-gray-lighter"><h3>Noticia 2</h3></div>
-        <div class="col-sm-4 col-album hidden-xs bg-gray-light"><h3>Noticia 3</h3></div>
-        <div class="col-sm-4 col-album hidden-xs bg-gray-lightest" ><h3>Noticia 4</h3></div>
-        <div class="col-sm-4 col-album hidden-xs bg-gray" ><h3>Noticia 5</h3></div>
       </div>
     </div>
   </div>
@@ -669,6 +667,13 @@ show you ads based on your interests. By using our website, you agree to
         <script>
             spAnalytics.init(null, {apiEndpoint: '/uk/spotify/framework/analytics/track/'})
         </script>
+          <!-- Parse -->
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+          <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+
+
+          <script src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/external_libraries-1443d5ec383061db944ce237cd00a854.js"></script>
+          <script src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/fitvids/jquery.fitvids-6d2e7e1eb472dfe322cbe38eebe09756.js"></script>
 
                   <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"056bbe16c3","applicationID":"2971901","transactionName":"blwBY0pSDEQFU0BfWlcWIlRMWg1ZS1hbW1A=","queueTime":0,"applicationTime":731,"atts":"QhsCFQJIH0o=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script>
 
