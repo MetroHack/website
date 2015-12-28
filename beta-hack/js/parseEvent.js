@@ -4,7 +4,7 @@ $(function() {
     Parse.initialize("pVQEqn1cuqxLP8BL0LSbkB18p9Tii4wWi9EMfuzv", "6cceoL2U1WqxgUUls7dFj7CHwyEZeN47vTxySufM");
     //***************************************ESTEBAN Y LUIS***************************************
     //AQUI YO LLAME LA FUNCION PARA QUE SE EJECUTE DE UNA, PERO LLAMENLA CUANDO SEA NECESARIO PARA USTEDES
-    getEvent();   
+    getEvent();
 });
 
 
