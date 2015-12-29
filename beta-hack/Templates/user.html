@@ -20,6 +20,12 @@
     <link href="css/light-bootstrap-dashboard.css" rel="stylesheet"/>
 
     
+        <!--Parse -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+    <script src="js/parseMyProfile.js"></script> <!-- parseMyProfile --> 
+    
+    
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
@@ -62,7 +68,7 @@
             
                 
                 <li class="active">
-                    <a href="#0">
+                    <a href="#0" onclick="logOut()">
                         <i class="pe-7s-user"></i> 
                         <p>Cerrar Sesión</p>
                     </a>
@@ -169,14 +175,14 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Usuario</label>
-                                                <input type="text" class="form-control" disabled placeholder="Usuario" value="Marcelo">
+                                                <input type="text" class="form-control" disabled placeholder="Usuario" id="username">
                                             </div>        
                                         </div>
                                         
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email</label>
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <input type="email" class="form-control" placeholder="Email" id="email">
                                             </div>        
                                         </div>
                                     </div>
@@ -185,13 +191,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Nombre</label>
-                                                <input type="text" class="form-control" placeholder="Nombre" value="Marcelo">
+                                                <input type="text" class="form-control" placeholder="Nombre" id="firstName">
                                             </div>        
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Apellido</label>
-                                                <input type="text" class="form-control" placeholder="Apellido" value="Laprea">
+                                                <input type="text" class="form-control" placeholder="Apellido" id="lastName">
                                             </div>        
                                         </div>
                                     </div>
@@ -201,13 +207,13 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Carrera</label>
-                                                <input type="text" class="form-control" placeholder="Carrera" value="Ingenieria de Sistemas">
+                                                <input type="text" class="form-control" placeholder="Carrera" id="carrera">
                                             </div>        
                                         </div>
                                         
                                     </div>
                                     
-                                    <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                    <button type="submit" class="btn btn-info btn-fill pull-right" onClick="updateUser(this.form)">Actualizar Perfil</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
@@ -222,15 +228,19 @@
                             </div>
                             <div class="content">
                                 <div class="author">
-                                     <a href="#">
+                                     <a>
                                     <img class="avatar border-gray" src="img/git1.png" alt="..."/>
                                    
-                                      <h4 class="title">Marcelo Laprea<br />
-                                         <small>marcelo</small>
-                                      </h4> 
+                                      <h4 class="title" id="nombreTarjeta">
+                                         
+                                      </h4>
+                                         <h5> </h5>
+                                         <h5 class="title" id="usernameTarjeta">
+                                         </h5>
                                     </a>
                                 </div>  
-                                <p class="description text-center">Estudiante de Ingenieria</p>
+                                <h5> </h5>
+                                <p class="description text-center" id="carreraTarjeta">Estudiante de Ingenieria</p>
                             </div>
                             <hr>
 <!--
