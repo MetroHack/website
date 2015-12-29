@@ -5,6 +5,7 @@ $(function() {
     //***************************************ESTEBAN Y LUIS***************************************
     //AQUI YO LLAME LA FUNCION PARA QUE SE EJECUTE DE UNA, PERO LLAMENLA CUANDO SEA NECESARIO PARA USTEDES
     //getEvent();
+    //logIn();
     checkLogin();
     getUser();
 });
@@ -41,7 +42,7 @@ function getUser(){
         document.getElementById("firstName").value = firstName;
         document.getElementById("lastName").value = lastName;
         document.getElementById("carrera").value = carrera;
-        
+        document.getElementById("bienvenido").innerHTML = "Bienvenido, " + username;
 
         setTarjeta(username, firstName, lastName, carrera);
     }     
@@ -105,8 +106,8 @@ function checkLogin(){
     if (Parse.User.current()){
      //alert("Usuario Comprobado");   
     }else{
-     alert("No estas registrado");
-     location.replace("http://beta-hack.appspot.com");
+     //alert("No estas registrado");
+     //location.replace("http://beta-hack.appspot.com");
     } 
 }
 

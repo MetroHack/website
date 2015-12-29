@@ -608,8 +608,13 @@ body > .navbar-collapse[data-color="purple"]:after {
   border-color: #1DC7EA;
 }
 .btn-info.btn-fill {
+/*
   color: #FFFFFF;
   background-color: #1DC7EA;
+*/
+  color: #FFFFFF;
+  background-color: #000000;
+  border-color: black;
   opacity: 1;
   filter: alpha(opacity=100);
 }
