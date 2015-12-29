@@ -12,6 +12,7 @@ function getEvent(){
     var query = new Parse.Query(Evento);
     query.find({
           success: function(results) {
+                var output = "";
                 //alert("Successfully retrieved " + results.length + " scores.");
                 // Do something with the returned Parse.Object values
                 for (var i = 0; i < results.length; i++) {
