@@ -33,6 +33,11 @@
     <link rel="stylesheet" href="css/pruebaSpotify.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style70.css"> <!-- Resource style -->
 	<script src="js/modernizr70.js"></script> <!-- Modernizr -->
+    
+    <!--Parse -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+    <script src="js/parseHome.js"></script> <!-- parseCreateEvent --> 
  	
     
   </head>
@@ -76,7 +81,7 @@
               <a href="http://beta-hack.appspot.com/user">Mi Perfil</a>
             </li>
             <li>
-              <a href="http://beta-hack.appspot.com">Cerrar Sesión</a>
+              <a href="http://beta-hack.appspot.com" onclick="logOut()">Cerrar Sesión</a>
             </li>
           </ul>
         </li>
@@ -115,7 +120,7 @@
   </li>
 
       <li class="alternate sidepanel-item-small hidden-md hidden-lg " >
-    <a href="http://beta-hack.appspot.com" id="nav-link-log out" data-ga-category="menu" data-ga-action="log out">
+    <a href="http://beta-hack.appspot.com" id="nav-link-log out" data-ga-category="menu" data-ga-action="log out" onclick="logOut()">
       Cerrar Sesión
                 </a>
   </li>
@@ -129,7 +134,7 @@
             <img class="user-img img-circle navbar-user-img" src="img/git1.png" alt="Usuario">
 
   
-          <span class="user-text ">Marcelo</span>
+          <span class="user-text" id="username">Marcelo</span>
 
       <svg class="svg-chevron-down"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chevron-down"></use></svg>
     </a>
@@ -139,7 +144,7 @@
         <a href="http://beta-hack.appspot.com/user">Mi Perfil</a>
       </li>
       <li>
-        <a>Cerrar Sesión</a>
+        <a onclick="logOut()">Cerrar Sesión</a>
       </li>
     </ul>
   </li>

@@ -8,7 +8,7 @@ $(function() {
 
 
 function checkLogin(){
-    if (Parse.User.current()){
+    if (Parse.User.current().get('admin') == true){
      //alert("Usuario Comprobado");   
     }else{
      alert("No eres administrador");
