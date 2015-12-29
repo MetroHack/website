@@ -33,6 +33,7 @@ a {
 
 a:hover, a:focus {
 	color: #34495e;
+	background-color: white;
 }
 
 section {
