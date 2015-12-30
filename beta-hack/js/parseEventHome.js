@@ -15,6 +15,7 @@ function getEvent(){
                 var output = "";
                 //alert("Successfully retrieved " + results.length + " scores.");
                 // Do something with the returned Parse.Object values
+                output+= "<ul id=\"cd-gallery-items\" class=\"cd-container\">";
                 for (var i = 0; i < results.length; i++) {
                   var object = results[i];
 
@@ -27,15 +28,16 @@ function getEvent(){
                   
                   output += "<li>";
                   output += "<ul class=\"cd-item-wrapper\">";
-                  output += "<li class=\"cd-item-front\"><a href=\"#0\"><img src=\""+imagen+"\" alt=\"Preview image\"></a></li>";
+                  output += "<li class=\"cd-item-front\"><a href=\"#0\"><img src="+imagen+" alt=\"Preview image\"></a></li>";
                   output += "</ul>";
                   output += "<div class=\"cd-item-info\">";
                   output += "<b><a href=\"#0\">"+titulo+"</a></b>";
                   output += "</div>";
                   output += "</li>";
                   
-                }	
-                          alert("Titulo: "+titulo);	
+                }
+                output += "</ul>";
+                 alert("Tituloss: "+titulo);	
                   //LLenamos el HTML	                  
                   $("#eventos").html(output);
           },
