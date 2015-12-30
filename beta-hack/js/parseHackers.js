@@ -45,3 +45,8 @@ function getUsuarios(){
           }
     });    
 }
+
+function logOut(){
+ Parse.User.logOut(); 
+ location.replace("http://beta-hack.appspot.com");
+}

@@ -9,3 +9,9 @@ $(function() {
      location.replace("http://beta-hack.appspot.com");
     }
 });
+
+
+function logOut(){
+ Parse.User.logOut(); 
+ location.replace("http://beta-hack.appspot.com");
+}
