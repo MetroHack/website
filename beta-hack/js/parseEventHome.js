@@ -64,10 +64,10 @@ function getEvent(){
                   
                   output += "<li>";
                   output += "<ul class=\"cd-item-wrapper\">";
-                  output += "<li class=\"cd-item-front\"><a href='http://localhost:8080/event#"+id+"'><img src="+imagen+" alt=\"Preview image\"></a></li>";
+                  output += "<li class=\"cd-item-front\"><a href='http://beta-hack.appspot.com/event#"+id+"'><img src="+imagen+" alt=\"Preview image\"></a></li>";
                   output += "</ul>";
                   output += "<div class=\"cd-item-info\">";
-                  output += "<b><a href='http://localhost:8080/event#"+id+"'>"+titulo+"</a></b>";
+                  output += "<b><a href='http://beta-hack.appspot.com/event#"+id+"'>"+titulo+"</a></b>";
                   output += "</div>";
                   output += "</li>";
                   
