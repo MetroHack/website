@@ -8,10 +8,12 @@ $(function() {
 });
 
 
-
 function getEvent(){
+    var id = window.location.hash.substr(1);
+    //alert(id);
     var Evento = Parse.Object.extend("Event");
     var query = new Parse.Query(Evento);
+    query.equalTo("objectId", id);
     query.find({
           success: function(results) {
                 //alert("Successfully retrieved " + results.length + " scores.");
