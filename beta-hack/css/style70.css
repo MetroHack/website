@@ -30,6 +30,12 @@ img {
   max-width: 100%;
 }
 
+.titulo{
+
+font-size: 1.9em; 
+
+color: #313D53;
+}
 /* -------------------------------- 
 
 Modules - reusable parts of our design
