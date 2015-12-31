@@ -62,6 +62,9 @@ function getEvent(){
                   var descripcion = object.get('descripcion');
                   var id = object.id;
                   
+                 imagen.height = 596;
+				 imagen.width =  334;
+                  
                   output += "<li>";
                   output += "<ul class=\"cd-item-wrapper\">";
                   output += "<li class=\"cd-item-front\"><a href='http://beta-hack.appspot.com/event#"+id+"'><img src="+imagen+" alt=\"Preview image\"></a></li>";

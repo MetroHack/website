@@ -64,22 +64,22 @@
     <div class="navigation" >
             <nav>
                 <div class="container" id="imagen">
-               <!-- Logo <a href="metro-hack.appspot.com" class="pull-left brand"><img src="" alt=""></a> --> 
+                 
                 <ul class="pull-right">
+                	<li>
+                		<a href="/r">_Home</a>
+                	</li>	
                     <li>
-                        <a href="/r">_Home</a>
+                        <a class="sm" href data-id="about-us">_Descripción</a>
                     </li>
                     <li>
-                        <a href data-id="about-us">_Descripción</a>
+                        <a class="sm" href data-id="prize">_Fecha</a>
                     </li>
                     <li>
-                        <a href data-id="prize">_Fecha</a>
+                        <a class="sm" href data-id="rules">_Lugar</a>
                     </li>
                     <li>
-                        <a href data-id="rules">_Lugar</a>
-                    </li>
-                    <li>
-                        <a href data-id="registro" id="registroMenu" style="display: none">_Registro</a>
+                        <a  class="sm" href data-id="registro" id="registroMenu" style="display: none">_Registro</a>
                     </li>
                 </ul>
                </div>
@@ -175,7 +175,7 @@ $(window).scroll(function() {
 });
 
 // Smooth scrolling :o
-$("nav li a").click(function(e){
+$("nav li .sm").click(function(e){
     e.preventDefault();
     var offset = 20;
     var dataid = $(this).data("id");
