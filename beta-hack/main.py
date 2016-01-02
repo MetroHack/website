@@ -139,8 +139,17 @@ class User(MainHandler):
 	def post(self): 
 		self.render_home()						
 		
+class Nosotros(MainHandler):
 
+	def render_home(self,title=""):
+			self.render("nosotros.html")
+			
+	def get(self):
+    		self.render_home()
+    		
+	def post(self): 
+		self.render_home()	
                     
-app = webapp2.WSGIApplication([ ('/', Login), ('/r', Home), ('/admin', Admin),('/adminevent', AdminEvent), ('/user', User),('/adminhackers', AdminHackers),('/adminhome', AdminHome),('/event', Event) ], debug=True) 
+app = webapp2.WSGIApplication([ ('/', Login), ('/r', Home), ('/admin', Admin),('/adminevent', AdminEvent), ('/nosotros', Nosotros), ('/user', User),('/adminhackers', AdminHackers),('/adminhome', AdminHome),('/event', Event) ], debug=True) 
 
 
