@@ -19,7 +19,7 @@ function normalLogin (form) {
                              success: function(user) {
                              // Do stuff after successful login.
                              alert("Bienvenido");
-                             location.replace("http://beta-hack.appspot.com/r");
+                             location.replace("http://metro-hack.appspot.com/r");
                              
                              //***************************************************
                             //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
