@@ -23,7 +23,7 @@ function getUser(){
 
 function logOut(){
  Parse.User.logOut(); 
- location.replace("http://beta-hack.appspot.com");
+ location.replace("http://metro-hack.appspot.com");
 }
 
 function checkLogin(){
@@ -31,7 +31,7 @@ function checkLogin(){
      //alert("Usuario Comprobado");   
     }else{
      alert("No estas registrado");
-     location.replace("http://beta-hack.appspot.com");
+     location.replace("http://metro-hack.appspot.com");
     } 
 }
 

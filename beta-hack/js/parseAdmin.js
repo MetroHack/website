@@ -37,7 +37,7 @@ function adminLogin (form) {
 
                                                         //***************************************************
                                                        //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
-                                                       location.replace("http://beta-hack.appspot.com/adminhome");
+                                                       location.replace("http://metro-hack.appspot.com/adminhome");
                                                         },
                                                         error: function(user, error) {
                                                        // The login failed. Check error to see why.

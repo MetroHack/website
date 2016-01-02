@@ -99,7 +99,7 @@ function updateUser(form){
 
 function logOut(){
  Parse.User.logOut(); 
- location.replace("http://beta-hack.appspot.com");
+ location.replace("http://metro-hack.appspot.com");
 }
 
 function checkLogin(){

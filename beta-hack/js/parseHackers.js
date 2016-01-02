@@ -12,7 +12,7 @@ function checkLogin(){
      //alert("Usuario Comprobado");   
     }else{
      alert("No eres administrador");
-     location.replace("http://beta-hack.appspot.com");
+     location.replace("http://metro-hack.appspot.com");
     } 
 }
 
@@ -48,5 +48,5 @@ function getUsuarios(){
 
 function logOut(){
  Parse.User.logOut(); 
- location.replace("http://beta-hack.appspot.com");
+ location.replace("http://metro-hack.appspot.com");
 }

@@ -18,9 +18,8 @@ function normalLogin (form) {
                        Parse.User.logIn(username, password, {
                              success: function(user) {
                              // Do stuff after successful login.
-                             alert("Bienvenido");
+                             //alert("Bienvenido");
                              location.replace("http://metro-hack.appspot.com/r");
-                             
                              //***************************************************
                             //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
                             //location.replace("http://www.w3schools.com");
@@ -55,8 +54,8 @@ function crearUsuario (form) {
                                     user.signUp(null, {
                                       success: function(user) {
                                         // Hooray! Let them use the app now.
-                                          alert("Registrado");
-                                          location.replace("http://beta-hack.appspot.com/r");
+                                          //alert("Registrado");
+                                          location.replace("http://metro-hack.appspot.com/r");
                                       },
                                       error: function(user, error) {
                                         // Show the error message somewhere and let the user try again.
