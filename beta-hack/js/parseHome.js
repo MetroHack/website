@@ -5,8 +5,8 @@ $(function() {
     //***************************************ESTEBAN Y LUIS***************************************
     //AQUI YO LLAME LA FUNCION PARA QUE SE EJECUTE DE UNA, PERO LLAMENLA CUANDO SEA NECESARIO PARA USTEDES
     //getEvent();
-    //checkLogin();
-    //getUser();
+    checkLogin();
+    getUser();
 });
 
 
