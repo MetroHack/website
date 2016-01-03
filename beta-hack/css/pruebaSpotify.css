@@ -1,7 +1,7 @@
 .prueba{
-color: #ffffff;
-font-size: 25px;
-margin-top: -5px;    
+margin-top: -2px;    
+height: 80px;
+width: 80px;
 }
 
 
@@ -11,26 +11,29 @@ margin-top: -5px;
   margin-top: 1px;
   font-size: 15px;
   height: 50px;
+  width: 50px;
 } 
 }
 
 
-@media (min-width: 480px) and (max-width: 767px){
+@media (min-width: 480px) and (max-width: 768px){
     
 .prueba {
   margin-top: 1px;
   font-size: 20px;
   height: 55px;
+  width: 55px;
 }  
 }
 
 
-@media (min-width: 768px) and (max-width: 969px){
+@media (min-width: 769px) and (max-width: 969px){
     
 .prueba {
   margin-top: -1px;
   font-size: 20px;
   height: 70px;
+  width: 70px;    
 }  
 }
 
