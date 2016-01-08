@@ -23,20 +23,19 @@ function getUsuarios(){
     query.find({
           success: function(results) {
                 var output = "";
-                var output2 = "";
-                var numeroDeUsuarios = 0
                 //alert("Successfully retrieved " + results.length + " scores.");
                 // Do something with the returned Parse.Object values
                 for (var i = 0; i < results.length; i++) {
                   var object = results[i];
+                
                   var username = object.get('username');
                   var email = object.get('email');
                   output += "<li>";
                   output += "<h1>"+"Username: "+username+"     |     "+" Email: "+email+"</h1>";
                   output += "</li>";
-                
+
                 }
-                
+              
               $("#lista-usuario").html(output);
               
               //$("#lista-usuarios").html(output);
