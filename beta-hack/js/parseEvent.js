@@ -19,7 +19,7 @@ function getEvent(){
     query.equalTo("objectId", id);
     query.find({
           success: function(results) {
-                //alert("Successfully retrieved " + results.length + " scores.");
+                alert("Successfully retrieved " + results.length + " scores.");
                 // Do something with the returned Parse.Object values
                 for (var i = 0; i < results.length; i++) {
                   var object = results[i];
@@ -186,7 +186,7 @@ function registrarUsuario(){
 
 
 function logIn(){
-Parse.User.logIn("marcelo", "20131110015", {
+Parse.User.logIn("prueba", "prueba", {
   success: function(user) {
     //alert(Parse.User.current().id);
     // Do stuff after successful login.
