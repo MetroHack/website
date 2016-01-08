@@ -114,7 +114,7 @@ function comprobarRegistro(){
                                             $('#registrame').text("Registrado"); 
                                             $('#registrame').attr("disabled", true);
                                         
-                                        
+                                        }
                                     },
                             
                             
