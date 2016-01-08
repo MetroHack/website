@@ -110,7 +110,9 @@ function comprobarRegistro(){
                                     success: function(results) {
                                     //*********************************************
                                     //Aqui va el codigo para bloquear el boton LUIS
-                                        
+                                        for (var i = 0; i < results.length; i++) {
+                                            $('#registrame').text("Registrado"); 
+                                            $('#registrame').attr("disabled", true);
                                         
                                         
                                     },
