@@ -182,20 +182,3 @@ function registrarUsuario(){
             }
     
 }
-
-
-
-function logIn(){
-Parse.User.logIn("prueba", "prueba", {
-  success: function(user) {
-    //alert(Parse.User.current().id);
-    // Do stuff after successful login.
-  },
-  error: function(user, error) {
-    // The login failed. Check error to see why.
-  }
-});
-    
-}
-
-
