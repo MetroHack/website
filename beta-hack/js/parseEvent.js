@@ -109,9 +109,8 @@ function comprobarRegistro(){
                             
                                     success: function(results) {
                                     //*********************************************
-                                    //Aqui va el codigo para bloquear el boton LUIS   
-                                      	 alert("Registrado en el evento"); 
-                                       
+                                    //Aqui va el codigo para bloquear el boton LUIS
+                                        
                                         
                                         
                                     },
