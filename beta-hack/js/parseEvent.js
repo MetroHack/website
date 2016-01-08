@@ -5,9 +5,10 @@ $(function() {
     //***************************************ESTEBAN Y LUIS***************************************
     //AQUI YO LLAME LA FUNCION PARA QUE SE EJECUTE DE UNA, PERO LLAMENLA CUANDO SEA NECESARIO PARA USTEDES
     getEvent();
+    //logIn();
     comprobarRegistro();
     //Parse.User.logOut(); 
-    //logIn();
+    //
 });
 
 
@@ -108,9 +109,19 @@ function comprobarRegistro(){
                         query.find({
                             
                                     success: function(results) {
+                                    alert("Successfully retrieved " + results.length + " scores.");
                                     //*********************************************
+<<<<<<< HEAD
                                     //Aqui va el codigo para bloquear el boton LUIS   
                                       	 alert("Registrado en el evento"); 
+=======
+                                    //Aqui va el codigo para bloquear el boton LUIS
+                                        for (var i = 0; i < results.length; i++) {
+                                            $('#registrame').text("Registrado"); 
+                                            $('#registrame').attr("disabled", true);
+                                            
+                                        }
+>>>>>>> origin/master
                                        
                                         
                                         
@@ -125,6 +136,8 @@ function comprobarRegistro(){
           
                           });     
  
+            }else{
+             alert("No estas registrado");   
             }
     
 }
@@ -185,7 +198,7 @@ function registrarUsuario(){
 
 
 function logIn(){
-Parse.User.logIn("marcelo", "20131110015", {
+Parse.User.logIn("prueba", "prueba", {
   success: function(user) {
     //alert(Parse.User.current().id);
     // Do stuff after successful login.
