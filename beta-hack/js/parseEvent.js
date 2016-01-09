@@ -19,7 +19,7 @@ function getEvent(){
     query.equalTo("objectId", id);
     query.find({
           success: function(results) {
-                alert("Successfully retrieved " + results.length + " scores.");
+                //alert("Successfully retrieved " + results.length + " scores.");
                 // Do something with the returned Parse.Object values
                 for (var i = 0; i < results.length; i++) {
                   var object = results[i];
@@ -111,10 +111,11 @@ function comprobarRegistro(){
                                     //*********************************************
                                     //Aqui va el codigo para bloquear el boton LUIS
                                         for (var i = 0; i < results.length; i++) {
-                                            $('#registrame').text("Registrado"); 
+                                            $('#registrame').text("Ya Registrado"); 
                                             $('#registrame').attr("disabled", true);
-                                        
+                                        	$('#registrame').css("color","green");
                                         }
+                                        
                                     },
                             
                             
@@ -164,7 +165,13 @@ function registrarUsuario(){
                                             registro.set("evento",results[0]);
                                             registro.set("eventoID",id);
                                             registro.save();
-                                            alert("Registrado");
+                                            alert("Registrado!");
+                                            
+                                            for (var i = 0; i < results.length; i++) {
+                                            $('#registrame').text("Ya Registrado"); 
+                                            $('#registrame').attr("disabled", true);
+                                        	$('#registrame').css("color","green");
+                                        }
                                         
                                         
                                     },
