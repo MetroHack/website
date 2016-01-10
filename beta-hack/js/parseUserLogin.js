@@ -12,13 +12,13 @@ function normalLogin (form) {
     //Creamos las variables del texto introducido por el usuario
     var username = form.user.value;
     var password = form.password.value;
-    
+    username = username.toLowerCase();
     
                        //Metodo de Parse para login
                        Parse.User.logIn(username, password, {
                              success: function(user) {
                              // Do stuff after successful login.
-                             //alert("Bienvenido");
+                             //alert("Bienvenido "+username);
                              location.replace("http://metro-hack.appspot.com/r");
                              //***************************************************
                             //*****AQUI ABAJO VA EL SALTO DE PAGINA LUIS*********
@@ -36,10 +36,11 @@ function normalLogin (form) {
 
 function crearUsuario (form) {
     event.preventDefault();
-    var user = new Parse.User();
-    
+    var user = new Parse.User()
     //Creamos las variables del texto introducido por el usuario
     var username = form.userNew.value;
+    username = username.toLowerCase();
+    
     var password = form.passwordNew.value;
     var email = form.email.value;
     //alert("Email: " + email + " Username: " + username + " Password: " + password);
