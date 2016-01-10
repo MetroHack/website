@@ -447,6 +447,19 @@ xsigin/signup popup
     padding: 2em 2em 0;
   }
 }
+.cd-form-bottom-message12 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -30px;
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.cd-form-bottom-message12 a {
+  color: #FFF;
+  text-decoration: underline;
+}
 
 .cd-form-bottom-message {
   position: absolute;
