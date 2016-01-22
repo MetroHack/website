@@ -8,6 +8,11 @@ html * {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img { 
+	width: 345px;
+	height: 262px;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
